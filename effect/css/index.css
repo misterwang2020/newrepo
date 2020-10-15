@@ -1,0 +1,573 @@
+/*清除默认效果*/
+*{
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.row{
+	margin: 0;
+}
+
+.f1{
+	height: 100%;
+	/*border: 1px solid red;*/
+	padding: 0;
+	margin: 0;
+}
+
+/*在screen小于992时的头部区域开始*/
+.dl-title{
+	display: none;
+	border: 1px solid red;
+}
+
+#dl-menu{
+	
+	width: 100%;
+	z-index: 9400;
+	position: relative;
+	
+}
+
+#mobile-menu{
+	display: block;
+	text-align: center;
+	margin: 0;
+	color: #ffffff;
+	background: #d30000;
+	border: 1px solid #d30000;
+	font: normal normal 14px / 14px "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+	text-transform: none;
+	padding: 14px 10px 14px 15px;
+}
+
+.mobile-icon{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-top: -2px;
+	font-family: 'Glyphicons Halflings';
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*下拉区域*/
+.dl-container{
+	display: none;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: relative;
+	z-index: 99999;
+	margin-top: -20px;
+}
+
+.mobile-margin{
+	position: absolute;
+	right: -25px;
+}
+
+.dl-menu{	
+	z-index: 99999;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: absolute;
+	right: 0;
+	/*top: -50px;*/
+	width: 100%;
+	opacity: 1;
+	pointer-events: none;
+	transform: translateY(10px);
+	backface-visibility: hidden;
+	min-width: 230px;
+	list-style: none;
+	text-align: left;
+	transform-style: preserve-3d;
+}
+
+.dl-menu li{
+	background: rgba(211,0,0,0.96);
+	border-bottom: 1px solid #d30000;
+	position: relative;
+}
+
+.dl-menu li a{
+	text-align: center;
+	font: normal normal 14px / 14px "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+	text-transform: none;
+	color: #ffffff;
+	display: block;
+	position: relative;
+	padding: 10px 0;
+	margin: 0 20px;
+	outline: none;
+}
+
+.dl-menu li i{
+	position: absolute;
+	right: 8px;
+	display: block;
+	top: 50%;
+	width: 6px;
+	height: 9px;
+	margin-top: -4.5px;
+	color: white;
+}
+
+.mobile-icon-2{
+	right: -26px;
+}
+
+/*固定在底部*/
+.bottom-inner{
+	display: none;
+	line-height: 50px;
+	text-align: center;
+	background: red;
+}
+
+.bottom-inner a{
+	color: white;
+	font-family: "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 16px;
+}
+/*在screen小于992时的头部区域结束*/
+
+/*头部区域开始*/
+.container-fluid{
+	/*border: 1px solid red;*/
+	padding: 0;
+	margin: 0;
+	background: #F9F9F9;
+}
+
+.header{
+	/*border: 1px solid green;*/
+    margin: 0 auto;
+    min-height: 94px;
+    height: 94px;
+    max-width: 1190px!important;
+}
+
+
+
+.logo{
+	height: 100%;
+	/*border: 1px solid green;*/
+}
+
+.logo a{
+  	/*border: 1px solid blue;*/
+	display: inline-block;
+	max-height: 41px;
+	width: 100%;
+	margin-top:26px ;
+}
+
+.logo a img{
+	width: 100%;
+	height: 100%;
+
+}
+
+/*头部导航栏*/
+.nav{
+	padding: 0 10px;
+	height: 94px;
+	line-height: 94px;
+	/*border: 1px solid red;*/
+	vertical-align: middle;
+}
+
+.nav ul li{	
+	float: left;
+	margin-left: 22.5px;
+    margin-right: 22.5px;
+}
+
+.nav ul li a{
+	color: rgb(102, 102, 102);
+	font-family: "微软雅黑";
+	font-size: 14px;
+
+}
+
+/*头部右边部分*/
+.assistive-info{
+	height: 100%;
+	text-align: right;
+	/*border: 1px solid blue;*/
+}
+
+.assistive-info p{
+	margin: 0;
+}
+
+.assistive-info .phone{
+	margin-top: 20px;
+	font-size: 24px;
+	font-family: century gothic;
+	color: rgb(105, 105, 105);
+}
+
+.assistive-info .fuwu{
+	color: rgb(211, 0, 0);
+	font-size: 15px;
+	letter-spacing: 5px;
+	font-family: "微软雅黑";
+}
+/*头部区域结束*/
+
+
+
+/*装修效果图开始*/
+.main-title,.main-container{
+	max-width: 1190px;
+	/*border:1px solid red;*/
+	margin: 0 auto;
+	text-align: center;	
+}
+.vc-item{
+	/*border:1px solid green;*/
+	position: relative;
+	overflow: hidden;
+	height:1100px;
+}
+.vc-inner{
+	
+	overflow: hidden;
+	height: 25%;
+	margin-bottom: 25px;
+	padding: 12.5px ;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transform: translate3d(0px, 0px, 0px);
+	width: 33.166667%;
+	float: left;
+	text-align: center;
+}
+
+.vc-inner a{
+	/*border: 1px solid blue;*/
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	padding: 0px;
+}
+
+.vc-inner a img{
+	vertical-align: middle;
+	max-width: 100%;
+	width: auto;
+	height: 100%;
+}
+
+.vc-inner i{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: all .6s ease;
+}
+
+img{
+	transition: all 0.5s ease;
+}
+.vc-inner:hover img{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transition: all 1s ease;
+	
+}
+
+.vc-inner i:hover{
+	transition: all .6s ease;
+}
+
+
+.vc-inner-2{
+	transform: translate3d(262px, 0px, 0px);
+}
+.vc-inner-3{
+	transform: translate3d(524px, 0px, 0px);
+}
+
+.vc-inner-4{
+	transform: translate3d(0px, 266px, 0px);
+}
+.vc-inner-5{
+	transform: translate3d(262px, 266px, 0px);
+}
+.vc-inner-6{
+	transform: translate3d(524px, 266px, 0px);
+}
+.vc-inner-7{
+	transform: translate3d(0px, 532px, 0px);
+}
+.vc-inner-8{
+	transform: translate3d(262px, 532px, 0px);
+}
+.vc-inner-9{
+	transform: translate3d(524px, 532px, 0px);
+}
+.vc-inner-10{
+	transform: translate3d(0px, 800px, 0px);
+}
+.vc-inner-11{
+	transform: translate3d(262px, 800px, 0px);
+}
+.vc-inner-12{
+	transform: translate3d(524px, 800px, 0px);
+}
+.information-inner{
+	margin: 0;
+	border-radius: 0px;
+	position: relative;
+	padding: 0 30px;
+	transition: all 0.3s ease 0s;
+	background-color: rgba(0,0,0,0.5);
+	/*width: 100%;*/
+}
+
+.information-title{
+	position: relative;
+	line-height: 1.5em;
+	background-repeat: no-repeat;
+	padding-top: 41px;
+	padding-bottom: 8px;
+	margin-bottom: 0;
+	min-height: 1px;
+}
+
+.information-title span{
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: rgb(255,255,255);
+}
+
+.form-inner{
+	margin-top: 20px;
+}
+.iphorm-elements{
+	margin: 0;
+	padding: 0;
+}
+
+.iphorm-elements{
+	width: 100% !important;
+	max-width: 100% !important;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.iphorm-elements .iphorm-elements-text1{
+	padding-bottom: 10px;
+}
+/*清除默认的label样式*/
+label{
+	font-weight: 400;
+}
+.iphorm-elements label{
+	color: rgb(41, 41, 41);
+	font-size: 14px;
+	line-height: 40px;
+	margin-top: 0px;
+	opacity: 1;
+	padding: 0;
+	margin-left: 5px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	vertical-align: middle;
+	display: inline-block;
+	min-height: 20px;
+	font-family: "微软雅黑";
+}
+
+.iphorm-elements .iphorm-required{
+	font-size: 10px;
+	color: #cc0101;
+}
+
+.iphorm-elements input{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	height: 40px;
+	font-size: 14px;
+	width: 100%;
+	max-width: 100% !important;
+	border-width: 1px !important;
+	border-color: #ffffff !important;
+	background-color: rgba(255, 255, 255, 1) !important;
+	margin: 0;
+	margin-bottom: 3px
+	padding: 2px;
+	min-width: 10px;
+	color: #555555;
+	display: inline-block;
+	transition: border-color 0.15s ease-in-out 0s,box-shadow 0.15s ease-in-out 0s;
+}
+
+
+.iphorm-submit{
+	margin: 10px 0;
+	font-family: 微软雅黑;
+	font-style: normal;
+	/*border: 1px solid blue;*/
+}
+
+.iphorm-submit-button{
+	float: none !important;
+	text-align: center !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 100;
+	/*border: 1px solid green;*/
+}
+
+.iphorm-submit-button button{
+	font-size: 14px;
+	line-height: 14px;
+	margin: 0;
+	font-family: 微软雅黑;
+	font-style: normal;
+	border: none;
+	background: none;
+	text-align: center;
+	width: auto;
+	overflow: visible;
+	white-space: nowrap;
+	padding: 0;
+	height: auto;
+	cursor: pointer;
+	padding: 0 0 10px 0;
+	/*border: 1px solid green;*/
+}
+
+.iphorm-submit-button button span{
+	font-size: 14px;
+	line-height: 14px;
+	padding-left: 100px !important;
+	background-color: #ff343e;
+	border: 1px solid #ff343e;
+	display: block;
+	margin: 0;
+	color: #000;
+	cursor: pointer;
+}
+
+.iphorm-submit-button button span em{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 10px 100px 10px 0;
+	background-color: #ff343e;
+	font-style: normal;
+	background:  #ff343e;
+	display: block;
+	margin: 0;
+	cursor: pointer;
+}
+
+
+/*装修效果图右边部分*/
+.cases{
+	text-align: left;
+	padding: 10px 0 0 10px;
+}
+
+.cases-top span{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	color: #666666;
+}
+
+.cases-img{
+	margin-top: 10px;
+	width:100%;
+	height: 100%;
+}
+
+.cases-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.cases-title{
+	padding: 10px 0 5px 0 ;
+}
+
+.cases-title a{
+	color: #373A41;
+	font-size: 15px;
+	font-family: 微软雅黑;
+	line-height: 21px;
+}
+
+.cases-inner{
+	color: rgb(114, 114, 114);
+	font-family: 微软雅黑;
+	font-size: 13px;
+}
+/*装修效果图结束*/
+
+
+/*底部区域开始*/
+.footer{
+	background: black;
+	/*border: 1px solid red;*/
+	margin-top: 100px;
+	padding: 50px 0 0 0;
+}
+
+.footer-inner{
+	text-align: center;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.footer-inner ul li{
+	width: 80px;
+	display: inline-block;
+}
+
+.footer-inner ul li a{
+	cursor: pointer;
+	line-height: 14px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 80px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: rgb(201, 201, 201) !important;
+}
+
+.footer-inner span{
+	display: inline-block;
+	padding: 25px 0;
+	color: rgb(172, 172, 172) !important;
+}
+/*底部区域结束*/

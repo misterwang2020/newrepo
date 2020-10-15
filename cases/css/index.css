@@ -1,0 +1,284 @@
+/*清除默认效果*/
+*{
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.row{
+	margin: 0;
+}
+
+.f1{
+	height: 100%;
+	/*border: 1px solid red;*/
+	padding: 0;
+	margin: 0;
+}
+
+/*在screen小于992时的头部区域开始*/
+.dl-title{
+	display: none;
+	border: 1px solid red;
+}
+
+#dl-menu{
+	
+	width: 100%;
+	z-index: 9400;
+	position: relative;
+	
+}
+
+#mobile-menu{
+	display: block;
+	text-align: center;
+	margin: 0;
+	color: #ffffff;
+	background: #d30000;
+	border: 1px solid #d30000;
+	font: normal normal 14px / 14px "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+	text-transform: none;
+	padding: 14px 10px 14px 15px;
+}
+
+.mobile-icon{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-top: -2px;
+	font-family: 'Glyphicons Halflings';
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*下拉区域*/
+.dl-container{
+	display: none;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: relative;
+	z-index: 99999;
+	margin-top: -20px;
+}
+
+.mobile-margin{
+	position: absolute;
+	right: -25px;
+}
+
+.dl-menu{	
+	z-index: 99999;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: absolute;
+	right: 0;
+	/*top: -50px;*/
+	width: 100%;
+	opacity: 1;
+	pointer-events: none;
+	transform: translateY(10px);
+	backface-visibility: hidden;
+	min-width: 230px;
+	list-style: none;
+	text-align: left;
+	transform-style: preserve-3d;
+}
+
+.dl-menu li{
+	background: rgba(211,0,0,0.96);
+	border-bottom: 1px solid #d30000;
+	position: relative;
+}
+
+.dl-menu li a{
+	text-align: center;
+	font: normal normal 14px / 14px "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+	text-transform: none;
+	color: #ffffff;
+	display: block;
+	position: relative;
+	padding: 10px 0;
+	margin: 0 20px;
+	outline: none;
+}
+
+.dl-menu li i{
+	position: absolute;
+	right: 8px;
+	display: block;
+	top: 50%;
+	width: 6px;
+	height: 9px;
+	margin-top: -4.5px;
+	color: white;
+}
+
+.mobile-icon-2{
+	right: -26px;
+}
+
+/*固定在底部*/
+.bottom-inner{
+	display: none;
+	line-height: 50px;
+	text-align: center;
+	background: red;
+}
+
+.bottom-inner a{
+	color: white;
+	font-family: "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 16px;
+}
+/*在screen小于992时的头部区域结束*/
+
+/*头部区域开始*/
+.container-fluid{
+	/*border: 1px solid red;*/
+	padding: 0;
+	margin: 0;
+	background: #F9F9F9;
+}
+
+.header{
+	/*border: 1px solid green;*/
+    margin: 0 auto;
+    min-height: 94px;
+    height: 94px;
+    max-width: 1190px!important;
+}
+
+
+
+.logo{
+	height: 100%;
+	/*border: 1px solid green;*/
+}
+
+.logo a{
+  	/*border: 1px solid blue;*/
+	display: inline-block;
+	max-height: 41px;
+	width: 100%;
+	margin-top:26px ;
+}
+
+.logo a img{
+	width: 100%;
+	height: 100%;
+
+}
+
+/*头部导航栏*/
+.nav{
+	padding: 0 10px;
+	height: 94px;
+	line-height: 94px;
+	/*border: 1px solid red;*/
+	vertical-align: middle;
+}
+
+.nav ul li{	
+	float: left;
+	margin-left: 22.5px;
+    margin-right: 22.5px;
+}
+
+.nav ul li a{
+	color: rgb(102, 102, 102);
+	font-family: "微软雅黑";
+	font-size: 14px;
+
+}
+
+/*头部右边部分*/
+.assistive-info{
+	height: 100%;
+	text-align: right;
+	/*border: 1px solid blue;*/
+}
+
+.assistive-info p{
+	margin: 0;
+}
+
+.assistive-info .phone{
+	margin-top: 20px;
+	font-size: 24px;
+	font-family: century gothic;
+	color: rgb(105, 105, 105);
+}
+
+.assistive-info .fuwu{
+	color: rgb(211, 0, 0);
+	font-size: 15px;
+	letter-spacing: 5px;
+	font-family: "微软雅黑";
+}
+/*头部区域结束*/
+
+/*内容部分开始*/
+.cases-container{
+	border: 1px solid red;
+	margin: 0 auto;
+    max-width: 1190px!important;
+}
+
+
+/*内容部分结束*/
+
+
+
+/*底部区域开始*/
+.footer{
+	background: black;
+	/*border: 1px solid red;*/
+	margin-top: 100px;
+	padding: 50px 0 0 0;
+}
+
+.footer-inner{
+	text-align: center;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.footer-inner ul li{
+	width: 80px;
+	display: inline-block;
+}
+
+.footer-inner ul li a{
+	cursor: pointer;
+	line-height: 14px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 80px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: rgb(201, 201, 201) !important;
+}
+
+.footer-inner span{
+	display: inline-block;
+	padding: 25px 0;
+	color: rgb(172, 172, 172) !important;
+}
+/*底部区域结束*/

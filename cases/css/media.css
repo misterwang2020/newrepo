@@ -1,0 +1,14 @@
+/*导航栏媒体查询*/
+@media only screen and (max-width: 992px) {
+	.dl-title{
+		display: block;
+	}
+	
+	.nav,.assistive-info{
+		display: none;
+	}
+	.bottom-inner{
+		display: block;
+	}
+}
+

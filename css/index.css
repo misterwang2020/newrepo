@@ -1,0 +1,1211 @@
+/*清除默认效果*/
+*{
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.row{
+	margin: 0;
+}
+
+.f1{
+	height: 100%;
+	/*border: 1px solid red;*/
+	padding: 0;
+	margin: 0;
+}
+
+/*在screen小于992时的头部区域开始*/
+.dl-title{
+	display: none;
+	border: 1px solid red;
+}
+
+#dl-menu{
+	
+	width: 100%;
+	z-index: 9400;
+	position: relative;
+	
+}
+
+#mobile-menu{
+	display: block;
+	text-align: center;
+	margin: 0;
+	color: #ffffff;
+	background: #d30000;
+	border: 1px solid #d30000;
+	font: normal normal 14px / 14px "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+	text-transform: none;
+	padding: 14px 10px 14px 15px;
+}
+
+.mobile-icon{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-top: -2px;
+	font-family: 'Glyphicons Halflings';
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*下拉区域*/
+.dl-container{
+	display: none;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: relative;
+	z-index: 99999;
+	margin-top: -20px;
+}
+
+.mobile-margin{
+	position: absolute;
+	right: -25px;
+}
+
+.dl-menu{	
+	z-index: 99999;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: absolute;
+	right: 0;
+	/*top: -50px;*/
+	width: 100%;
+	opacity: 1;
+	pointer-events: none;
+	transform: translateY(10px);
+	backface-visibility: hidden;
+	min-width: 230px;
+	list-style: none;
+	text-align: left;
+	transform-style: preserve-3d;
+}
+
+.dl-menu li{
+	background: rgba(211,0,0,0.96);
+	border-bottom: 1px solid #d30000;
+	position: relative;
+}
+
+.dl-menu li a{
+	text-align: center;
+	font: normal normal 14px / 14px "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+	text-transform: none;
+	color: #ffffff;
+	display: block;
+	position: relative;
+	padding: 10px 0;
+	margin: 0 20px;
+	outline: none;
+}
+
+.dl-menu li i{
+	position: absolute;
+	right: 8px;
+	display: block;
+	top: 50%;
+	width: 6px;
+	height: 9px;
+	margin-top: -4.5px;
+	color: white;
+}
+
+.mobile-icon-2{
+	right: -26px;
+}
+
+/*固定在底部*/
+.bottom-inner{
+	display: none;
+	line-height: 50px;
+	text-align: center;
+	background: red;
+}
+
+.bottom-inner a{
+	color: white;
+	font-family: "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 16px;
+}
+/*在screen小于992时的头部区域结束*/
+
+
+
+
+/*头部区域开始*/
+.container-fluid{
+	/*border: 1px solid red;*/
+	padding: 0;
+	margin: 0;
+	background: #F9F9F9;
+}
+
+.header{
+	/*border: 1px solid green;*/
+    margin: 0 auto;
+    min-height: 94px;
+    height: 94px;
+    max-width: 1190px!important;
+}
+
+
+
+.logo{
+	height: 100%;
+	/*border: 1px solid green;*/
+}
+
+.logo a{
+  	/*border: 1px solid blue;*/
+	display: inline-block;
+	max-height: 41px;
+	width: 100%;
+	margin-top:26px ;
+}
+
+.logo a img{
+	width: 100%;
+	height: 100%;
+
+}
+
+/*头部导航栏*/
+.nav{
+	padding: 0 10px;
+	height: 94px;
+	line-height: 94px;
+	/*border: 1px solid red;*/
+	vertical-align: middle;
+}
+
+.nav ul li{	
+	float: left;
+	margin-left: 22.5px;
+    margin-right: 22.5px;
+}
+
+.nav ul li a{
+	color: rgb(102, 102, 102);
+	font-family: "微软雅黑";
+	font-size: 14px;
+
+}
+
+/*头部右边部分*/
+.assistive-info{
+	height: 100%;
+	text-align: right;
+	/*border: 1px solid blue;*/
+}
+
+.assistive-info p{
+	margin: 0;
+}
+
+.assistive-info .phone{
+	margin-top: 20px;
+	font-size: 24px;
+	font-family: century gothic;
+	color: rgb(105, 105, 105);
+}
+
+.assistive-info .fuwu{
+	color: rgb(211, 0, 0);
+	font-size: 15px;
+	letter-spacing: 5px;
+	font-family: "微软雅黑";
+}
+/*头部区域结束*/
+
+
+
+
+/*装修案例介绍开始*/
+.cases-container{
+	padding-top: 100px;
+	background: #F9F9F9;
+}
+
+.cases{
+	max-width: 1190px;
+	/*border:1px solid red;*/
+	margin: 0 auto;
+	
+}
+
+.cases .list1{
+	margin-bottom: 15px;
+	border-bottom: 1px solid transparent;
+	padding: 15px;
+	position: relative;
+	min-height: 1px;
+}
+
+.beiou{
+	transition: all .6s ease;
+	/*border: 1px solid green;*/
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.beiou:hover{
+	transition: all 0.6s ease;
+}
+
+.post-phumb{
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	text-align:center;
+	padding-bottom: 10px;
+	vertical-align: top;
+}
+
+.post-phumb a{
+	font-size: 0;
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	color: #77a9ff;
+	background: transparent;
+}
+
+.post-phumb a img{
+	background-color: #ffffff;
+	max-width: 100%;
+	border-radius: 0px;
+	box-shadow: none;
+	padding: 6px;
+	border: none;
+}
+
+.post-phumb i{
+	background-image: url(../img/zoom_in_black.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: rgb(174,174,174);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.beiou:hover .post-phumb i{
+	background-image: urlurl(../img/zoom_in_black.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: rgb(174,174,174);
+	opacity: 0.6;
+	transition: all 0.6s ease;
+	
+}
+
+.post-title{
+	padding: 10px 20px ;
+    font-weight: normal;
+    color: #999999;
+    line-height: 15px;
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+	min-width: 80px;
+	clear: both;
+
+}
+
+.post-title::before{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: #ffd3d3;
+	left: 0px;
+	bottom: 0;
+	margin: 0;
+	transition: all 0.6s ease 0s;
+}
+.post-title a{
+	color: #999999;
+	font-size: 15px;
+	font-family: 微软雅黑;
+	line-height: 21px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	/*position: absolute;*/
+}
+
+.beiou:hover .post-title::before{
+	width: 100%;
+	transition: all 0.6s ease 0s;
+}
+
+.beiou:hover .post-title a{
+	color: #555555 !important;
+	transition: all 0.6s ease 0s;		
+}
+.beiou:hover .post-title{
+	padding-left: 40px !important;
+	transition: all 0.6s ease 0s;
+}
+
+
+.post-excerpt{
+	color: #b7b7b7;
+	font-size: 12px;
+	font-family: 微软雅黑;
+	line-height: 22px;
+	padding: 10px 20px;
+	width: 100% !important;
+	text-align: left;
+	position: relative;
+	min-width: 80px;
+	clear: both;
+}
+
+
+.vc_read_more_wrapper{
+	height: 59px;
+	width: 100% !important;
+	text-align: center;
+}
+.vc_read_more_wrapper a{
+	color: #ff9191;
+	font-size: 12px;
+	font-family: arial;
+	padding: 0 30px 40px;
+}
+
+.more-case{
+	margin-top: 0;
+    margin-bottom: 0;
+    padding: 40px 0 80px;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    
+}
+
+.more-case a{
+	font-family: 微软雅黑;
+    font-size: 14px;
+    padding: 8px 40px;
+    border:1px solid rgb(209, 209, 209);
+    background-color: transparent;
+    color: rgb(188, 188, 188);
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    /*border: 1px solid transparent;*/
+    box-sizing: border-box;
+    word-wrap: break-word;
+    top: 0;
+    transition: all .2s ease-in-out;
+    line-height: normal;
+    position: relative;
+    /*border: 1px solid red;*/
+}
+
+#icon-arrow{
+	position: absolute;
+	top: 35%;
+	right: 10px;
+}
+
+.more-case a:hover{
+	border: 1px solid red;
+	color: red;
+	 transition: all .2s ease-in-out;
+}
+
+/*装修案例介绍结束*/
+
+/*设计师团队 头部标题开始开始*/
+
+.main-title,.main-container{
+	max-width: 1190px;
+	/*border:1px solid red;*/
+	margin: 0 auto;
+	text-align: center;	
+}
+
+
+.teams-title{
+	width: 100%;
+	height: 100%;
+	font-family: 微软雅黑;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+    color: #333333;
+    padding: 0 0 10px 0;
+    display: block;
+    padding: 0 0 10px 0;
+    vertical-align: middle;
+	/*border: 1px solid red;*/
+}
+
+.teams-inner{
+	font-family: 微软雅黑;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    color: #bababa;
+    display: block;
+    padding: 2px;
+    vertical-align: middle;
+}
+/*设计师团队头部标题结束*/
+
+
+/*设计师团队  内容部分开始*/
+.f2{
+	
+	/*border: 1px solid red;*/
+}
+
+.main-container{
+	margin-top: 50px;
+}
+
+.list-container{
+	text-align: center;
+	position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /*float: left;*/
+    max-width: 100%;
+    margin: auto;
+    /*border:1px solid green*/
+}
+
+.icon-list1{
+	margin: auto;
+	border:1px solid #ff343e;
+	border-radius: 50%;
+	width: 4em;
+	height: 4em;
+	line-height: 4.5em;
+	text-align: center;
+	box-sizing: content-box;
+	position: relative;
+	color:#ff343e ;
+}
+#icon-pencil{
+	font-style: normal;
+	font-weight: 400;
+	display: inline-block;
+	text-decoration: inherit;
+	width: inherit;
+	height: inherit;
+	font-size: 2em;
+	text-align: center;
+	text-rendering: optimizelegibility;
+}
+
+.qfy-element{
+	position: relative;
+	line-height: 1.5em;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 17px;
+	letter-spacing: 2px;
+ 	color:#000000;
+ 	text-align: center;
+ 	font-family: 微軟正黑體;
+}
+
+.container-element{
+	position: relative;
+	line-height: 1.5em;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-size: 13px;
+ 	color: rgb(153, 153, 153);
+ 	font-family: "宋体";
+}
+/*设计师团队  内容部分结束*/
+
+
+
+
+/*装修效果图 标题开始*/
+.teams-margin{
+	padding-top: 100px;
+}
+
+/*装修效果图标题结束*/
+
+/*装修效果图开始*/
+.vc-item{
+	position: relative;
+	overflow: hidden;
+	height: 798px;
+}
+.vc-inner{
+	height: 33.333333%;
+	margin-bottom: 25px;
+	padding: 12.5px ;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transform: translate3d(0px, 0px, 0px);
+	width: 33.166667%;
+	float: left;
+	text-align: center;
+}
+
+.vc-inner a{
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	padding: 0px;
+}
+
+.vc-inner a img{
+	vertical-align: middle;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.vc-inner i{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: all .6s ease;
+}
+
+
+
+img{
+	transition: all 0.5s ease;
+}
+.vc-inner:hover img{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transition: all 1s ease;
+	
+}
+
+.vc-inner i:hover{
+	transition: all .6s ease;
+}
+
+
+.vc-inner-2{
+	transform: translate3d(262px, 0px, 0px);
+}
+.vc-inner-3{
+	transform: translate3d(524px, 0px, 0px);
+}
+
+.vc-inner-4{
+	transform: translate3d(0px, 266px, 0px);
+}
+.vc-inner-5{
+	transform: translate3d(262px, 266px, 0px);
+}
+.vc-inner-6{
+	transform: translate3d(524px, 266px, 0px);
+}
+.vc-inner-7{
+	transform: translate3d(0px, 532px, 0px);
+}
+.vc-inner-8{
+	transform: translate3d(262px, 532px, 0px);
+}
+.vc-inner-9{
+	transform: translate3d(524px, 532px, 0px);
+}
+
+
+.information-inner{
+	margin: 0;
+	border-radius: 0px;
+	position: relative;
+	padding: 0 30px;
+	transition: all 0.3s ease 0s;
+	background-color: rgba(0,0,0,0.5);
+	/*width: 100%;*/
+}
+
+.information-title{
+	position: relative;
+	line-height: 1.5em;
+	background-repeat: no-repeat;
+	padding-top: 41px;
+	padding-bottom: 8px;
+	margin-bottom: 0;
+	min-height: 1px;
+}
+
+.information-title span{
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: rgb(255,255,255);
+}
+
+.form-inner{
+	margin-top: 20px;
+}
+.iphorm-elements{
+	margin: 0;
+	padding: 0;
+}
+
+.iphorm-elements{
+	width: 100% !important;
+	max-width: 100% !important;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.iphorm-elements .iphorm-elements-text1{
+	padding-bottom: 10px;
+}
+/*清除默认的label样式*/
+label{
+	font-weight: 400;
+}
+.iphorm-elements label{
+	color: rgb(41, 41, 41);
+	font-size: 14px;
+	line-height: 40px;
+	margin-top: 0px;
+	opacity: 1;
+	padding: 0;
+	margin-left: 5px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	vertical-align: middle;
+	display: inline-block;
+	min-height: 20px;
+	font-family: "微软雅黑";
+}
+
+.iphorm-elements .iphorm-required{
+	font-size: 10px;
+	color: #cc0101;
+}
+
+.iphorm-elements input{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	height: 40px;
+	font-size: 14px;
+	width: 100%;
+	max-width: 100% !important;
+	border-width: 1px !important;
+	border-color: #ffffff !important;
+	background-color: rgba(255, 255, 255, 1) !important;
+	margin: 0;
+	margin-bottom: 3px
+	padding: 2px;
+	min-width: 10px;
+	color: #555555;
+	display: inline-block;
+	transition: border-color 0.15s ease-in-out 0s,box-shadow 0.15s ease-in-out 0s;
+}
+
+
+.iphorm-submit{
+	margin: 10px 0;
+	font-family: 微软雅黑;
+	font-style: normal;
+	/*border: 1px solid blue;*/
+}
+
+.iphorm-submit-button{
+	float: none !important;
+	text-align: center !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 100;
+	/*border: 1px solid green;*/
+}
+
+.iphorm-submit-button button{
+	font-size: 14px;
+	line-height: 14px;
+	margin: 0;
+	font-family: 微软雅黑;
+	font-style: normal;
+	border: none;
+	background: none;
+	text-align: center;
+	width: auto;
+	overflow: visible;
+	white-space: nowrap;
+	padding: 0;
+	height: auto;
+	cursor: pointer;
+	padding: 0 0 10px 0;
+	/*border: 1px solid green;*/
+}
+
+.iphorm-submit-button button span{
+	font-size: 14px;
+	line-height: 14px;
+	padding-left: 100px !important;
+	background-color: #ff343e;
+	border: 1px solid #ff343e;
+	display: block;
+	margin: 0;
+	color: #000;
+	cursor: pointer;
+}
+
+.iphorm-submit-button button span em{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 10px 100px 10px 0;
+	background-color: #ff343e;
+	font-style: normal;
+	background:  #ff343e;
+	display: block;
+	margin: 0;
+	cursor: pointer;
+}
+/*装修效果图结束*/
+
+/*装修知识标题开始*/
+/*装修知识标题结束*/
+
+/*装修知识内容开始*/
+.knowledge{
+	padding:30px 0 100px;
+	overflow: hidden;
+	position: relative;
+	z-index: 4;
+	background-color: #f7f7f7;
+}
+
+.knowledge-full{
+	max-width: 1280px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 3;
+	width: auto !important;
+}
+
+.knowledge-row{
+	padding: 0 40px;
+	margin: 0;
+}
+
+.knowledge-fullrow{
+	margin-left: 0;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+	max-width: 100%;
+}
+
+.clound-container{
+	z-index: 3;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.knowledge-fullrow ol{
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	z-index: 666;
+	width: 60%;
+	margin-left: -30%;
+	padding-left: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.knowledge-fullrow ol li{
+	width: 12px;
+	height: 12px;
+	background-color: transparent;
+	border: 1px solid #808080;
+	display: inline-block;
+	text-indent: -999px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 5px;
+}
+
+
+.knowledge-fullrow .vc-left{
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	z-index: 2;
+	font-size: 30px;
+	transition: all .36s ease;
+	height: 40px;
+	width: 40px !important;
+	margin-right: -35px;
+	background-color: #999999;
+	left: auto;
+	right: 0;
+	margin-top: -40px;
+	color: white;
+}
+
+.knowledge-fullrow .vc-right{
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	z-index: 2;
+	font-size: 30px;
+	transition: all .36s ease;
+	height: 40px;
+	width: 40px !important;
+	margin-right: -35px;
+	background-color: #999999;
+	left: auto;
+	right: 0;
+	margin-top: 0px;
+	color: white;
+}
+
+
+.knowledge-slideline{
+	width: 7140px;
+	position: relative;
+	overflow: hidden;
+}
+
+.vc-slide-item{
+	width: 4.16667%;
+    height: 596px;
+    visibility: visible;
+    float: left;
+    animation-delay: 0s;
+    animation-name: qfyfadeInUp;
+    padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+	animation-duration: 1s;
+	animation-fill-mode: backwards;
+
+
+}
+
+.item-block{
+	position: relative;
+	padding-bottom: 298px;
+	overflow: hidden;
+	transition: all 0.3s ease-out 0s;
+}
+
+.item-box a{
+	display: block;
+	font-size: 0;
+}
+
+.item-box a img{
+	height: auto;
+	max-width: 100%;
+	transition: all .3s ease-out 0s !important;
+	border: 0;
+}
+
+.item-box .item-wrapper{
+	height: 298px;
+	bottom: 0;
+	top: auto;
+	background: rgba(255,255,255,1);
+	display: table;
+	table-layout: fixed;
+	padding: 0 10px;
+	position: absolute;
+	transition: all 0.36s ease 0s;
+	width: 100%;
+}
+
+.item-wrapper .item-info{
+	margin-top: 40px;
+	padding: 0;
+	position: relative;
+	transition: all 0.36s ease 0s;
+	text-align: center;
+}
+
+.text-wrap a{
+	display: block;
+	font-size: 0;	
+}
+
+.text-wrap a span{
+	color: #b7b7b7;
+	font-size: 13px;
+	font-family: 微软雅黑;
+	font-weight: normal;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 10;
+	transition: all 0.3s ease-out 0s;
+	display: block;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.text-wrap a span::after{	
+	bottom: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	border-bottom: 2px solid #5d5e5f;
+	content: "";
+	height: 0;
+	margin: 0 auto;
+	position: absolute;
+	width: 19px;
+	border-color: #cccccc;
+}
+
+.vc-slide-item-2 .item-block{
+	position: relative;
+	padding-top: 298px;
+	overflow: hidden;
+	transition: all 0.3s ease-out 0s;
+}
+
+.vc-slide-item-2 .item-wrapper{
+	
+	height: 298px;
+	bottom: auto;
+	top: 0;
+	background: rgba(255,255,255,1);
+	display: table;
+	table-layout: fixed;
+	padding: 0 10px;
+	position: absolute;
+	transition: all 0.36s ease 0s;
+	width: 100%;
+}
+
+ .vc-slide-item-2 .text-wrap a span::after{
+	
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: auto;
+	border-bottom: 2px solid #5d5e5f;
+	content: "";
+	height: 0;
+	margin: 0 auto;
+	position: absolute;
+	width: 19px;
+	border-color: #cccccc;
+}
+/*装修知识内容结束*/
+
+/*工地现场内容开始*/
+.scene{
+	padding:100px 0;
+	padding-bottom: 108px;
+	overflow: hidden;
+	position: relative;
+	z-index: 4;
+}
+
+.scene-full{
+	max-width: 1280px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 3;
+	width: auto !important;
+}
+
+.screen-row{
+	padding: 0 40px;
+}
+
+.f9{
+	padding-right: 15px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 5px;
+	max-width: 100%;
+}
+
+.vc-text{
+	margin: 0;
+	padding: 0;
+	border: 1px solid #DDDDDD;
+}
+
+.vc-span1{
+	position: relative;
+	min-height: 1px;
+	max-width: 100%;
+	margin-left: 0;
+}
+
+.vc-span1 a {
+	display: inline-block;
+}
+
+
+.vc-span1 a img{
+	vertical-align: middle;
+	max-width: 100%;
+	/*width: auto;*/
+	height: auto;
+}
+
+.vc-text1{
+	/*position: relative;*/
+	line-height: 1.5em;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	padding: 5px 0 ;
+	margin-bottom: 0;
+	min-height: 1px;
+	height: auto;
+	width: 100%;
+}
+
+.vc-text1 span{
+	display: inline-block;
+	text-align: center;
+	font-size: 13px;
+	color: rgb(128, 128, 128);
+	letter-spacing: 1px;
+	font-family: "微软雅黑";
+	width: 100%;
+}
+/*工地现场内容结束*/
+
+/*合作品牌内容开始*/
+.braid-margin{
+	padding: 50px 0 0 0;
+}
+
+.f3{
+	padding: 0;
+	margin: 0;
+}
+
+
+.braid-inner{
+	/*border: 1px solid red;*/
+	margin-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.braid-inner a{
+	display: inline-block;
+	width: 100%;
+}
+
+.braid-inner a img{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	transition: all .6s ease;
+	vertical-align: middle;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.braid-inner:hover img{
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: none;
+	transition: all 1s ease;
+}
+
+
+/*合作品牌内容结束*/
+
+/*底部区域开始*/
+.footer{
+	background: black;
+	/*border: 1px solid red;*/
+	margin-top: 100px;
+	padding: 50px 0 0 0;
+}
+
+.footer-inner{
+	text-align: center;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.footer-inner ul li{
+	width: 80px;
+	display: inline-block;
+}
+
+.footer-inner ul li a{
+	cursor: pointer;
+	line-height: 14px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 80px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: rgb(201, 201, 201) !important;
+}
+
+.footer-inner span{
+	display: inline-block;
+	padding: 25px 0;
+	color: rgb(172, 172, 172) !important;
+}
+/*底部区域结束*/
